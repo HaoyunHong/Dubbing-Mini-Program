@@ -1,0 +1,36 @@
+/* pages/sharepic/sharepic.wxss */
+.canvas{
+  width: 100%;
+  height: 100%;
+   position: fixed;
+  left: 0;
+  top: 999999rpx;     
+  background-color: rgba(0,0,0,0.3)
+}
+ 
+.preview{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:rgba(0,0,0,0.8);
+  z-index: 2;
+  text-align: center;
+  display:flex; 
+  flex-flow:column;
+}
+ 
+.preview image{
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  margin-bottom: 5%;
+}
+ 
+.preview button{
+  margin:0 20rpx;
+  border-radius:50px;
+  background-color:#ee2a65;
+  width:40%;
+}

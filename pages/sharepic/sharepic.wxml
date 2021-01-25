@@ -1,0 +1,8 @@
+<canvas canvas-id="myCanvas" class='canvas'/>
+<view hidden='{{hidden}}' class='preview'>
+  <image src='{{prurl}}' mode='widthFix'></image>
+  <view>
+  <button type='primary' size='mini' bindtap='result'>观看作品</button>
+  <button type='primary' size='mini' bindtap='save'>保存分享</button>
+  </view>
+</view>

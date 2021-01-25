@@ -1,0 +1,23 @@
+
+  <view class="b_title">{{score}}</view>
+  <video 
+      class="video_view"
+      id="resultVideo" 
+      src="{{video_url}}" 
+      show-center-play-btn="{{false}}" 
+      show-play-btn="{{false}}"
+      show-progress="{{false}}"
+      show-fullscreen-btn="{{false}}"
+      muted="{{true}}"
+      autoplay='{{false}}'
+      controls
+    ></video>
+  <view class='background'>
+    <view class='buttons'>
+      <image class='button' bindtap='playOrpause' src='{{playStatus?"../../image/pause2.png":"../../image/play2.png"}}'></image>
+    </view>
+    <button bindtap="handleTapShareButton" open-type="share" class="button-share" id="share-button">
+      <image style="width: 27px; height: 27px" src="/image/share.png"></image>
+    </button>
+  </view>
+

@@ -1,0 +1,115 @@
+
+video {
+  width: 320px;
+}
+
+
+/* .auto-rotate-container {
+  margin: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.record_voice {
+  justify-content: center;
+  display: flex;
+}
+
+.record_button{
+  margin: 20px 40px 0px 10px;
+  float:left;
+}
+
+.textrecord{
+  margin: 5px 40px 0px;
+  width: 100%;
+  height:18%;
+  float:left;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.listen_button{
+  margin: 20px 10px 0px 40px;
+  float:right;
+}
+
+.textlisten{
+  margin: 5px 20px 0px 40px;
+  width: 100%;
+  height:18%;
+  float:right;
+  font-weight: bold;
+  color:#000000;
+  font-size:16px;
+  text-align: center;
+}
+
+image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.video-container {
+  margin: 11px 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.last_button{
+  width:120px;
+  height:150px;
+  float:left;
+  bottom: 0px;
+}
+
+.next_button{
+  width:120px;
+  height:150px;
+  float:right;
+  bottom: 0px;
+}
+
+.leader_board{
+  float:right;
+  width:3rem;
+  height:3rem;
+}
+
+.avatar{
+  width:3rem;
+  height:3rem;
+  float:left;
+}
+
+.name{
+  font-weight: 600;
+  margin-left:0.5rem;
+  align-self: center;
+  margin-top:1rem;
+  float:left;
+}
+
+.button-share {
+  display: none;
+}
+
+.video_view{
+  width:100%
+}
+
+.top_bar{
+  align-self:center;
+  align-items: center;
+  text-align:center;
+  height:3rem
+}
+
+.video_name{
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: coral;
+  background-color: #f3e6bb;
+}

@@ -1,0 +1,22 @@
+<view class="container">
+
+<view class="page-body">
+  <view class="page-section tc">
+    <video 
+      id="myVideo" 
+      src="{{video_url}}" 
+      binderror="videoErrorCallback" 
+      show-casting-button
+      show-screen-lock-button
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      controls
+      picture-in-picture-mode="{{['push', 'pop']}}"
+      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+      enable-auto-rotation="{{enableAutoRotation}}"
+    ></video>
+  </view>
+</view>
+
+</view>

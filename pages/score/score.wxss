@@ -1,0 +1,70 @@
+/* pages/leaderboard/leaderboard.wxss */
+.table {
+  border: 0px solid darkgray;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100rpx;
+  align-items: center;
+ }
+
+.rank_r{
+  height:100rpx;
+  width:80rpx;
+  text-align: left;
+  margin-top:40rpx;
+  float:left;
+}
+
+.rank{
+  height:100rpx;
+  width:200rpx;
+  text-align: left;
+  margin-top:40rpx;
+  float:left;
+}
+
+.score{
+  height:100rpx;
+  width:200rpx;
+  text-align: center;
+  margin-top:40rpx;
+  margin-left: 40rpx;
+}
+
+.icon{
+  height:100rpx;
+  width:100rpx;
+  margin-top: 10rpx;
+  margin-left: 80rpx;
+}
+
+ .tf {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+ }
+ .td {
+  width:40%;
+  justify-content: center;
+  text-align: center;
+ }
+ .bg-w{
+  background: #f3e6bb;
+ }
+ .bg-g{
+  background: #dfcc78;
+ }
+ .th {
+  width: 40%;
+  justify-content: center;
+  background:  #e0ae40;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+ }

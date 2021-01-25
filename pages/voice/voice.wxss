@@ -1,0 +1,113 @@
+.this_page{
+  width: 100%;
+  height: 600px;
+  background-image: url('https://se-backend-se.app.secoder.net/api/image?name=lyric');
+}
+video {
+  width: 100%;
+  justify-content: center;
+}
+
+.video_view{
+  margin-top: 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.scroll_view{
+  height: 250px;
+  margin-top: 0px;
+  display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction:row;
+}
+
+.btn-list button {
+    width:60%;
+    flex:1;    
+}
+
+.audio {
+  text-align:center;
+}
+
+image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.page-body{
+  height: 140px;
+  margin-top: 0px;
+  background-image: url('https://se-backend-se.app.secoder.net/api/image?name=lyric');
+}
+
+.page-body-wrapper {
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 300rpx;
+}
+
+.page-body-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-big {
+  font-size: 40rpx;
+  margin: 20rpx;
+}
+.time-small {
+  font-size: 30rpx;
+}
+
+.page-body-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.page-body-button {
+  width: 250rpx;
+  text-align: center;
+}
+.button-stop-record {
+  width: 120rpx;
+  height: 120rpx;
+  border: 10rpx solid #fff;
+  background-color: #f55c23;
+  border-radius: 125rpx;
+  margin: 0 auto;
+}
+
+.scroll-view-item{
+  height: 500px;
+  background-image: url('https://se-backend-se.app.secoder.net/api/image?name=lyric');
+}
+
+
+.demo_text{
+  width:100%;
+  position: absolute;
+  text-align:center;
+  background-image: url('https://se-backend-se.app.secoder.net/api/image?name=lyric');
+  color:#8B4513;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.eval_button{
+  float: bottom;
+  background-color: #8B4513;
+}
+
+.eval_text{
+  color:#f3e6bb;
+  font-weight: bold;
+  font-size: 18px;
+  text-align:center;
+}
+
+
+

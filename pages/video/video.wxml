@@ -1,0 +1,38 @@
+<view class="this_page">
+  <view class="top_bar">
+  <image class="avatar" src="{{avatar_url}}"></image>
+  <text class="name">{{nickname}}</text>
+  <text class="video_name">{{level_name}}</text>
+  <image class="leader_board" bindtap="showLeaderBoard" src="../../image/leaderboard.png">排行榜</image>
+  </view>
+      <video 
+        class="video_view"
+        id="myVideo" 
+        src="{{video_url}}" 
+        show-center-play-btn='{{true}}' 
+        show-play-btn="{{true}}" 
+
+      ></video>
+      <!-- <view class="record_voice">
+        <view>                  
+          <button bindtap="sharepic">分享成绩</button>
+          <button bindtap="handleTapShareButton" open-type="share" class="button-share" id="share-button"></button>
+          <label for="share-button"><image style="width: 27px; height: 27px" src="/image/share.png" /></label>
+        </view>
+      </view> -->
+      
+      <view class="record_voice">
+        <view class="record_button" bindtap="record">
+              <image src="https://management-se.app.secoder.net/api/image?name=mic"></image>
+              <!-- <text class="textlisten">录音</text> -->
+        </view> 
+        <view class="listen_button" bindtap="listen">
+              <image src="https://management-se.app.secoder.net/api/image?name=video_cd"></image>
+              <!-- <text class="textlisten">作品</text> -->
+        </view> 
+      </view> 
+
+      <image bindtap="last" class="last_button" src="../../image/button_last.png"></image>
+      <image bindtap="next" class="next_button" src="../../image/button_next.png"></image>
+
+</view>

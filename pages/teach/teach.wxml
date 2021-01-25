@@ -1,0 +1,16 @@
+<view>
+  <view class="b_title">分步教程</view>
+  <block wx:for="{{steps}}">
+    <view>
+      <view class="b_block" wx:if="{{index % 2 == 0}}">
+        <video src="{{item.video_url}}" class="videowxss" id="{{item.code}}" bindplay="videoPlay"></video>
+        <view view bindtap="openVideo"><text class="textwxss">{{item.text}}</text></view>
+      </view>
+      <view class="a_block" wx:else>
+        <video src="{{item.video_url}}" class="videowxss" id="{{item.code}}" bindplay="videoPlay"></video>
+        <view view bindtap="openVideo"><text class="textwxss">{{item.text}}</text></view>
+      </view>
+    </view>
+  </block>
+</view>
+ 

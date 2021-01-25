@@ -1,0 +1,10 @@
+<!--pages/mainpage/mainpage.wxml-->
+<view class="main_container">
+    <image class="scores" src="../../image/score.png" bindtap="show_score"></image>
+  <view class="start_button">
+      <image class="start_bnt" src="../../image/start.png" bindtap="clicked"></image>
+  </view>
+  <view class="teach_button">
+    <image class="teach_bnt" src="https://management-se.app.secoder.net/api/image?name=teach" bindtap="teach_clicked"></image>
+  </view>
+</view>

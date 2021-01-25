@@ -1,0 +1,106 @@
+<view class="this_page">
+  <video 
+      class="video_view"
+      id="myVideo" 
+      src="{{video_url}}" 
+      show-center-play-btn="{{false}}" 
+      show-play-btn="{{false}}"
+      show-progress="{{false}}"
+      show-fullscreen-btn="{{false}}"
+      muted="{{true}}"
+      autoplay='{{false}}'
+      controls
+    ></video>
+
+<scroll-view class="scroll_view" scroll-y="true" style="height: 140px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view id="demo1" class="scroll-view-item">
+  <text class="demo_text">
+    {{lyric}}
+  </text>
+</view>
+</scroll-view>
+
+<view class="page-body">
+  <view class="page-section">
+    <block wx:if="{{recording === false && playing === false && hasRecord === false}}">
+      <view class="page-body-time">
+        <text class="time-big"></text>
+        <text class="time-big">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="startRecord">
+          <image src="../../image/record.png"></image>
+        </view>
+        <view class="page-body-button"></view>
+      </view>
+    </block>
+
+    <block wx:if="{{recording === true}}">
+      <view class="page-body-time">
+      <text class="time-big"></text>
+        <text class="time-big">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="stopRecord">
+          <view class="button-stop-record"></view>
+        </view>
+        <view class="page-body-button"></view>
+      </view>
+    </block>
+
+    <block wx:if="{{hasRecord === true && playing === false}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedPlayTime}}</text>
+        <text class="time-small">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button"></view>
+        <view class="page-body-button" bindtap="playVoice">
+          <image src="../../image/play.png"></image>
+        </view>
+        <view class="page-body-button" bindtap="clear">
+          <image src="../../image/trash.png"></image>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{hasRecord === true && playing === true}}">
+      <view class="page-body-time">
+        <text class="time-big">{{formatedPlayTime}}</text>
+        <text class="time-small">{{formatedRecordTime}}</text>
+      </view>
+      <view class="page-body-buttons">
+        <view class="page-body-button" bindtap="stopVoice">
+          <image src="../../image/stop.png"></image>
+        </view>
+        <!-- <view class="page-body-button" bindtap="pauseVoice">
+          <image src="/image/pause.png"></image>
+        </view> -->
+        <view class="page-body-button" bindtap="clear">
+          <image src="../../image/trash.png"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="flex-row btn-list">
+  <block wx:if="{{hasRecord === true && hasUploaded === false}}">
+    <button style="width:100rpx;" class="eval_button" bindtap="uploadVoice">
+      <text class="eval_text">{{uploadVoice}}</text>
+    </button>
+  </block>
+  <block wx:if="{{hasRecord == true && hasUploaded === true}}">
+    <button style="width:100rpx;" class="eval_button" bindtap="uploadVoice" disabled="{{true}}">
+      <text class="eval_text">{{uploadVoice}}</text>
+    </button>
+  </block>
+  <block wx:if="{{hasRecord == false}}">
+    <button style="width:100rpx;" class="eval_button" bindtap="uploadVoice" disabled="{{true}}">
+      <text class="eval_text">{{uploadVoice}}</text>
+    </button>
+  </block>
+</view>
+</view>
+

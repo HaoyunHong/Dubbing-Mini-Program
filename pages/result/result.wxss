@@ -1,0 +1,76 @@
+@import "../../common/lib/weui.wxss";
+video {
+  width: 320px;
+}
+
+.b_title{
+  top: 0rpx;
+  width: 100%;
+  height:4rem;
+  background-image: url('https://se-backend-se.app.secoder.net/api/image?name=lyric');
+  font-size:30px;
+  font-weight: bold;
+  color:#8B4513;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  justify-content: center;
+}
+
+/* .weui-cells{
+  margin: 20px 15px 0;
+  text-align: left;
+}
+.weui-label{
+  width: 5em;
+} */
+
+.page-section {
+  margin: 10rpx 3px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .progress {
+  position: fixed;
+  bottom: 90rpx;
+  left: 50rpx;
+  right: 50rpx;
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  color: rgb(87, 49, 49);
+  text-align: center;
+}
+
+.progress .bar {
+  flex: 1;
+}
+
+.progress text {
+  flex-basis: 90rpx;
+}
+*/
+
+.buttons {
+  position: fixed;
+  bottom: 360rpx;
+  left: 50rpx;
+  right: 50rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons .button {
+  width: 120rpx;
+  height: 120rpx; 
+} 
+
+
+.button-share {
+  align-items: center;
+  top: 280rpx;
+}

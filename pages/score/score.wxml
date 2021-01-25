@@ -1,0 +1,40 @@
+<!--pages/leaderboard/leaderboard.wxml-->
+<view class="table">
+ <view class="tf bg-w">
+ <view class="th"></view>
+ <view class="th">明星匹配度</view>
+ <view class="th "></view>
+ </view>
+ <block wx:for="{{listData}}">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+  <view>
+   <text class="rank_r">{{index+1}}</text>
+ </view>
+  <view>
+   <text class="rank">{{item.level}}</text>
+ </view>
+ <view class="score">
+   <text>{{item.score}}</text>
+ </view>
+ <view>
+   <image class="icon" src="../../image/play.png" bindtap="playAudio" id="{{item.code}}"></image>
+   <audio  src="{{item.AudioUrl}}" id="{{item.code}}" ></audio>
+ </view>
+ </view>
+ <view class="tr bg-w" wx:else>
+  <view>
+   <text class="rank_r">{{index+1}}</text>
+ </view>
+  <view>
+   <text class="rank">{{item.level}}</text>
+ </view>
+ <view class="score">
+   <text>{{item.score}}</text>
+ </view>
+ <view>
+   <image class="icon" src="../../image/play.png" bindtap="playAudio" id="{{item.code}}"></image>
+   <audio  src="{{item.AudioUrl}}" id="{{item.code}}" ></audio>
+ </view>
+ </view>
+ </block>
+</view>

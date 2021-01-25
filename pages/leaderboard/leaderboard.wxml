@@ -1,0 +1,46 @@
+<!--pages/leaderboard/leaderboard.wxml-->
+<view class="table">
+ <view class="tf bg-w">
+ <view class="th"></view>
+ <view class="th">排行榜</view>
+ <view class="th "></view>
+ </view>
+ <block wx:for="{{listData}}">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+ <view>
+   <text class="rank">{{item.code}}</text>
+ </view>
+ <view>
+   <image class="avatar" src="{{item.AvatarUrl}}"></image>
+ </view>
+ <view class="nickname">
+   <text>{{item.nickname}}</text>
+ </view>
+ <view class="score">
+   <text>{{item.score}}</text>
+ </view>
+ <view>
+   <image class="icon" src="../../image/play.png" bindtap="playAudio" id="{{item.code}}"></image>
+   <audio  src="{{item.AudioUrl}}" id="{{item.code}}" ></audio>
+ </view>
+ </view>
+ <view class="tr bg-w" wx:else>
+  <view>
+   <text class="rank">{{item.code}}</text>
+ </view>
+ <view>
+   <image class="avatar" src="{{item.AvatarUrl}}"></image>
+ </view>
+ <view class="nickname">
+   <text>{{item.nickname}}</text>
+ </view>
+ <view class="score">
+   <text>{{item.score}}</text>
+ </view>
+ <view>
+   <image class="icon" src="../../image/play.png" bindtap="playAudio" id="{{item.code}}"></image>
+   <audio  src="{{item.AudioUrl}}" id="{{item.code}}" ></audio>
+ </view>
+ </view>
+ </block>
+</view>

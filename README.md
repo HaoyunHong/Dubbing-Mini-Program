@@ -1,2 +1,2 @@
 # Dubbing-Mini-Program
-The Capstone Project of Software Engineering Course of THU, CST
+The Cooperative Capstone Project of Software Engineering Course of THU, CST

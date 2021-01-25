@@ -1,0 +1,17 @@
+<!--pages/levels/levels.wxml-->
+<view>
+  <view class="b_title">选择关卡</view>
+  <block wx:for="{{levels}}">
+    <view>
+      <view class="b_block" wx:if="{{index % 2 == 0}}"  bindtap="openVideo" id="{{item.code}}" data-level="{{item.code}}">
+        <image src="{{item.image_url}}" class="videowxss"></image>
+        <view><text class="textwxss">{{item.text}}</text></view>
+      </view>
+      <view class="a_block" wx:else  bindtap="openVideo" id="{{item.code}}" data-level="{{item.code}}">
+        <image src="{{item.image_url}}" class="videowxss"></image>
+        <view><text class="textwxss">{{item.text}}</text></view>
+      </view>
+    </view>
+  </block>
+</view>
+ 
